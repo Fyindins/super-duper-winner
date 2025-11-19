@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"time"
 )
@@ -13,5 +14,6 @@ func greet(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", greet)
 	fmt.Println("Server is running on port 8080")
+	log.Println("Server is running on port 8080")
 	http.ListenAndServe(":8080", nil)
 }
