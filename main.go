@@ -13,7 +13,7 @@ func greet(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", greet)
-	fmt.Println("Server is runni111ng on port 8080")
+	fmt.Println("Server is run11ning on port 8080")
 	log.Println("Server is running on port 8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 	http.ListenAndServe(":8080", nil)
